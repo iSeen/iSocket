@@ -1,0 +1,427 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		22B3A7F31E24BFC70037A919 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 22B3A7F21E24BFC70037A919 /* main.m */; };
+		22B3A7F61E24BFC70037A919 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 22B3A7F51E24BFC70037A919 /* AppDelegate.m */; };
+		22B3A7F91E24BFC70037A919 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22B3A7F81E24BFC70037A919 /* ViewController.m */; };
+		22B3A7FC1E24BFC70037A919 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22B3A7FA1E24BFC70037A919 /* Main.storyboard */; };
+		22B3A7FE1E24BFC70037A919 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22B3A7FD1E24BFC70037A919 /* Assets.xcassets */; };
+		22B3A8011E24BFC70037A919 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22B3A7FF1E24BFC70037A919 /* LaunchScreen.storyboard */; };
+		22B3A8191E24C6300037A919 /* person.proto in Resources */ = {isa = PBXBuildFile; fileRef = 22B3A8161E24C6300037A919 /* person.proto */; };
+		22B3A81A1E24C6300037A919 /* protobuf.md in Sources */ = {isa = PBXBuildFile; fileRef = 22B3A8171E24C6300037A919 /* protobuf.md */; };
+		22B3A81D1E24CC120037A919 /* Person.pbobjc.m in Sources */ = {isa = PBXBuildFile; fileRef = 22B3A81C1E24CC120037A919 /* Person.pbobjc.m */; };
+		8BF2A593B135024E6F94104D /* libPods-iSocket.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CDDBD8CA3D7402C31AFAE67 /* libPods-iSocket.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1CDDBD8CA3D7402C31AFAE67 /* libPods-iSocket.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iSocket.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		22B3A7EE1E24BFC70037A919 /* iSocket.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iSocket.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		22B3A7F21E24BFC70037A919 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		22B3A7F41E24BFC70037A919 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		22B3A7F51E24BFC70037A919 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		22B3A7F71E24BFC70037A919 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		22B3A7F81E24BFC70037A919 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		22B3A7FB1E24BFC70037A919 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		22B3A7FD1E24BFC70037A919 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		22B3A8001E24BFC70037A919 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		22B3A8021E24BFC70037A919 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		22B3A8161E24C6300037A919 /* person.proto */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = person.proto; sourceTree = "<group>"; };
+		22B3A8171E24C6300037A919 /* protobuf.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = protobuf.md; sourceTree = "<group>"; };
+		22B3A81B1E24CC120037A919 /* Person.pbobjc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.pbobjc.h; sourceTree = "<group>"; };
+		22B3A81C1E24CC120037A919 /* Person.pbobjc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.pbobjc.m; sourceTree = "<group>"; };
+		752C482E45FFCF3D9EE53803 /* Pods-iSocket.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iSocket.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iSocket/Pods-iSocket.debug.xcconfig"; sourceTree = "<group>"; };
+		E3BF96EB43F6AAB9E51735CE /* Pods-iSocket.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iSocket.release.xcconfig"; path = "Pods/Target Support Files/Pods-iSocket/Pods-iSocket.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		22B3A7EB1E24BFC70037A919 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8BF2A593B135024E6F94104D /* libPods-iSocket.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		22B3A7E51E24BFC70037A919 = {
+			isa = PBXGroup;
+			children = (
+				22B3A8121E24C6300037A919 /* Protobuf */,
+				22B3A7F01E24BFC70037A919 /* iSocket */,
+				22B3A7EF1E24BFC70037A919 /* Products */,
+				D9A7EF68F57E902BCC3F1D97 /* Pods */,
+				B85195D1F82599FCABE9D491 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		22B3A7EF1E24BFC70037A919 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				22B3A7EE1E24BFC70037A919 /* iSocket.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		22B3A7F01E24BFC70037A919 /* iSocket */ = {
+			isa = PBXGroup;
+			children = (
+				22B3A7F41E24BFC70037A919 /* AppDelegate.h */,
+				22B3A7F51E24BFC70037A919 /* AppDelegate.m */,
+				22B3A7F71E24BFC70037A919 /* ViewController.h */,
+				22B3A7F81E24BFC70037A919 /* ViewController.m */,
+				22B3A7FA1E24BFC70037A919 /* Main.storyboard */,
+				22B3A7FD1E24BFC70037A919 /* Assets.xcassets */,
+				22B3A7FF1E24BFC70037A919 /* LaunchScreen.storyboard */,
+				22B3A8021E24BFC70037A919 /* Info.plist */,
+				22B3A7F11E24BFC70037A919 /* Supporting Files */,
+			);
+			path = iSocket;
+			sourceTree = "<group>";
+		};
+		22B3A7F11E24BFC70037A919 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				22B3A7F21E24BFC70037A919 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		22B3A8121E24C6300037A919 /* Protobuf */ = {
+			isa = PBXGroup;
+			children = (
+				22B3A8131E24C6300037A919 /* Generate */,
+				22B3A8161E24C6300037A919 /* person.proto */,
+				22B3A8171E24C6300037A919 /* protobuf.md */,
+			);
+			path = Protobuf;
+			sourceTree = "<group>";
+		};
+		22B3A8131E24C6300037A919 /* Generate */ = {
+			isa = PBXGroup;
+			children = (
+				22B3A81B1E24CC120037A919 /* Person.pbobjc.h */,
+				22B3A81C1E24CC120037A919 /* Person.pbobjc.m */,
+			);
+			path = Generate;
+			sourceTree = "<group>";
+		};
+		B85195D1F82599FCABE9D491 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1CDDBD8CA3D7402C31AFAE67 /* libPods-iSocket.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D9A7EF68F57E902BCC3F1D97 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				752C482E45FFCF3D9EE53803 /* Pods-iSocket.debug.xcconfig */,
+				E3BF96EB43F6AAB9E51735CE /* Pods-iSocket.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		22B3A7ED1E24BFC70037A919 /* iSocket */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 22B3A8051E24BFC70037A919 /* Build configuration list for PBXNativeTarget "iSocket" */;
+			buildPhases = (
+				47BC6ABBD36A6A8902281F68 /* [CP] Check Pods Manifest.lock */,
+				22B3A7EA1E24BFC70037A919 /* Sources */,
+				22B3A7EB1E24BFC70037A919 /* Frameworks */,
+				22B3A7EC1E24BFC70037A919 /* Resources */,
+				A9934E58ADF8536CF7347506 /* [CP] Embed Pods Frameworks */,
+				4A5FFAA922B7B7DA2F960EAE /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iSocket;
+			productName = iSocket;
+			productReference = 22B3A7EE1E24BFC70037A919 /* iSocket.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		22B3A7E61E24BFC70037A919 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = iSeen;
+				TargetAttributes = {
+					22B3A7ED1E24BFC70037A919 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = DZNJ4F4E32;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 22B3A7E91E24BFC70037A919 /* Build configuration list for PBXProject "iSocket" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 22B3A7E51E24BFC70037A919;
+			productRefGroup = 22B3A7EF1E24BFC70037A919 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				22B3A7ED1E24BFC70037A919 /* iSocket */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		22B3A7EC1E24BFC70037A919 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22B3A8011E24BFC70037A919 /* LaunchScreen.storyboard in Resources */,
+				22B3A8191E24C6300037A919 /* person.proto in Resources */,
+				22B3A7FE1E24BFC70037A919 /* Assets.xcassets in Resources */,
+				22B3A7FC1E24BFC70037A919 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		47BC6ABBD36A6A8902281F68 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		4A5FFAA922B7B7DA2F960EAE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iSocket/Pods-iSocket-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A9934E58ADF8536CF7347506 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iSocket/Pods-iSocket-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		22B3A7EA1E24BFC70037A919 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22B3A7F91E24BFC70037A919 /* ViewController.m in Sources */,
+				22B3A7F61E24BFC70037A919 /* AppDelegate.m in Sources */,
+				22B3A81A1E24C6300037A919 /* protobuf.md in Sources */,
+				22B3A81D1E24CC120037A919 /* Person.pbobjc.m in Sources */,
+				22B3A7F31E24BFC70037A919 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		22B3A7FA1E24BFC70037A919 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				22B3A7FB1E24BFC70037A919 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		22B3A7FF1E24BFC70037A919 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				22B3A8001E24BFC70037A919 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		22B3A8031E24BFC70037A919 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		22B3A8041E24BFC70037A919 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		22B3A8061E24BFC70037A919 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 752C482E45FFCF3D9EE53803 /* Pods-iSocket.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = DZNJ4F4E32;
+				INFOPLIST_FILE = iSocket/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.iSeen.iSocket;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		22B3A8071E24BFC70037A919 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E3BF96EB43F6AAB9E51735CE /* Pods-iSocket.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = DZNJ4F4E32;
+				INFOPLIST_FILE = iSocket/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.iSeen.iSocket;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		22B3A7E91E24BFC70037A919 /* Build configuration list for PBXProject "iSocket" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				22B3A8031E24BFC70037A919 /* Debug */,
+				22B3A8041E24BFC70037A919 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		22B3A8051E24BFC70037A919 /* Build configuration list for PBXNativeTarget "iSocket" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				22B3A8061E24BFC70037A919 /* Debug */,
+				22B3A8071E24BFC70037A919 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 22B3A7E61E24BFC70037A919 /* Project object */;
+}

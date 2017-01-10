@@ -1,0 +1,50 @@
+## Xcode
+
+.DS_Store
+
+## weexSDK
+sdk/
+
+## Build generated
+build/
+DerivedData/
+
+
+## Various settings
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+!default.xcworkspace
+xcuserdata/
+
+
+## Other
+*.moved-aside
+*.xcuserstate
+*.mobileprovision
+.idea/
+
+
+## Obj-C/Swift specific
+*.hmap
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+
+## CocoaPods
+Pods/
+Podfile.lock   
+# 忽略Pods并管理Pods下B目录 (先将Pods中除B目录外文件移走，并commit；再将刚才移走的文件放回来即可)
+!/Pods/B/
+
+
+## Carthage
+Carthage/
+# Cartfile.resolved
+
