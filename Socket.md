@@ -18,7 +18,7 @@ TCP/IP（Transmission Control Protocol / Internet Protocol）即传输控制协�
 
 每一抽象层建立在低一层提供的服务上，并且为高一层提供服务，如下:
 
-![2017011267289707f253.jpg](http://ohlkc37yo.bkt.clouddn.com/2017011267289707f253.jpg)
+![](http://ohlkc37yo.bkt.clouddn.com/2017011267289707f253.jpg)
 
 备注:  
 ISO/OSI网络体系结构 和 TCP/IP协议模型, 关系如下: [查看详情](http://blog.csdn.net/htyurencaotang/article/details/11473015)
@@ -26,7 +26,7 @@ ISO/OSI网络体系结构 和 TCP/IP协议模型, 关系如下: [查看详情](h
 	其中物理层、数据链路层和网络层通常被称作媒体层，是网络工程师所研究的对象；
 	传输层、会话层、表示层和应用层则被称作主机层，是用户所面向和关心的内容。
 
-![20170112182600bec8a0f.gif](http://ohlkc37yo.bkt.clouddn.com/20170112182600bec8a0f.gif)
+![](http://ohlkc37yo.bkt.clouddn.com/20170112182600bec8a0f.gif)
 	
 	TCP/IP是传输层协议，主要解决数据如何在网络中传输；
 	HTTP是应用层协议，主要解决如何包装数据。
@@ -105,7 +105,7 @@ Socket描述了一个IP、端口对。它简化了程序员的操作，知道对
 当服务器端套接字监听到或者说接收到客户端套接字的连接请求时，就响应客户端套接字的请求，建立一个新的线程，把服务器端套接字的描述发给客户端，一旦客户端确认了此描述，双方就正式建立连接。而服务器端套接字继续处于监听状态，继续接收其他客户端套接字的连接请求。
 	
 Socket是在应用层和传输层之间的一个抽象层，它把TCP/IP层复杂的操作抽象为几个简单的接口供应用层调用已实现进程在网络中通信.
-![2017011290136socketTCPIP.jpg](http://ohlkc37yo.bkt.clouddn.com/2017011290136socketTCPIP.jpg)
+![](http://ohlkc37yo.bkt.clouddn.com/2017011290136socketTCPIP.jpg)
 
 @区别混淆
 > Socket连接与TCP连接  
