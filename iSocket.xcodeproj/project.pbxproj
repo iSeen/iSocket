@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		221A29621E28D15100763973 /* WebSocketManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 221A29611E28D15100763973 /* WebSocketManager.m */; };
+		2233E64D1E28B4CF0086056A /* CocoaAsyncSocketManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2233E64C1E28B4CF0086056A /* CocoaAsyncSocketManager.m */; };
+		225B6D351E28A0C4007054FB /* NativeSocketManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 225B6D341E28A0C4007054FB /* NativeSocketManager.m */; };
 		22B3A7F31E24BFC70037A919 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 22B3A7F21E24BFC70037A919 /* main.m */; };
 		22B3A7F61E24BFC70037A919 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 22B3A7F51E24BFC70037A919 /* AppDelegate.m */; };
 		22B3A7F91E24BFC70037A919 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22B3A7F81E24BFC70037A919 /* ViewController.m */; };
@@ -15,12 +18,17 @@
 		22B3A8011E24BFC70037A919 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22B3A7FF1E24BFC70037A919 /* LaunchScreen.storyboard */; };
 		22B3A8191E24C6300037A919 /* person.proto in Resources */ = {isa = PBXBuildFile; fileRef = 22B3A8161E24C6300037A919 /* person.proto */; };
 		22B3A81A1E24C6300037A919 /* protobuf.md in Sources */ = {isa = PBXBuildFile; fileRef = 22B3A8171E24C6300037A919 /* protobuf.md */; };
-		22B3A81D1E24CC120037A919 /* Person.pbobjc.m in Sources */ = {isa = PBXBuildFile; fileRef = 22B3A81C1E24CC120037A919 /* Person.pbobjc.m */; };
 		8BF2A593B135024E6F94104D /* libPods-iSocket.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CDDBD8CA3D7402C31AFAE67 /* libPods-iSocket.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1CDDBD8CA3D7402C31AFAE67 /* libPods-iSocket.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iSocket.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		221A29601E28D15100763973 /* WebSocketManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebSocketManager.h; sourceTree = "<group>"; };
+		221A29611E28D15100763973 /* WebSocketManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebSocketManager.m; sourceTree = "<group>"; };
+		2233E64B1E28B4CF0086056A /* CocoaAsyncSocketManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CocoaAsyncSocketManager.h; sourceTree = "<group>"; };
+		2233E64C1E28B4CF0086056A /* CocoaAsyncSocketManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CocoaAsyncSocketManager.m; sourceTree = "<group>"; };
+		225B6D331E28A0C4007054FB /* NativeSocketManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NativeSocketManager.h; sourceTree = "<group>"; };
+		225B6D341E28A0C4007054FB /* NativeSocketManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NativeSocketManager.m; sourceTree = "<group>"; };
 		22B3A7EE1E24BFC70037A919 /* iSocket.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iSocket.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		22B3A7F21E24BFC70037A919 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		22B3A7F41E24BFC70037A919 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -33,8 +41,6 @@
 		22B3A8021E24BFC70037A919 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		22B3A8161E24C6300037A919 /* person.proto */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = person.proto; sourceTree = "<group>"; };
 		22B3A8171E24C6300037A919 /* protobuf.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = protobuf.md; sourceTree = "<group>"; };
-		22B3A81B1E24CC120037A919 /* Person.pbobjc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.pbobjc.h; sourceTree = "<group>"; };
-		22B3A81C1E24CC120037A919 /* Person.pbobjc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.pbobjc.m; sourceTree = "<group>"; };
 		752C482E45FFCF3D9EE53803 /* Pods-iSocket.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iSocket.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iSocket/Pods-iSocket.debug.xcconfig"; sourceTree = "<group>"; };
 		E3BF96EB43F6AAB9E51735CE /* Pods-iSocket.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iSocket.release.xcconfig"; path = "Pods/Target Support Files/Pods-iSocket/Pods-iSocket.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -51,6 +57,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		221A295F1E28D14500763973 /* WebSocketManager */ = {
+			isa = PBXGroup;
+			children = (
+				221A29601E28D15100763973 /* WebSocketManager.h */,
+				221A29611E28D15100763973 /* WebSocketManager.m */,
+			);
+			path = WebSocketManager;
+			sourceTree = "<group>";
+		};
+		225B6D321E28A0B3007054FB /* NativeSocketManager */ = {
+			isa = PBXGroup;
+			children = (
+				225B6D331E28A0C4007054FB /* NativeSocketManager.h */,
+				225B6D341E28A0C4007054FB /* NativeSocketManager.m */,
+			);
+			path = NativeSocketManager;
+			sourceTree = "<group>";
+		};
+		2282E1FF1E28B47D0047E2EC /* CocoaAsyncSocketManager */ = {
+			isa = PBXGroup;
+			children = (
+				2233E64B1E28B4CF0086056A /* CocoaAsyncSocketManager.h */,
+				2233E64C1E28B4CF0086056A /* CocoaAsyncSocketManager.m */,
+			);
+			path = CocoaAsyncSocketManager;
+			sourceTree = "<group>";
+		};
 		22B3A7E51E24BFC70037A919 = {
 			isa = PBXGroup;
 			children = (
@@ -73,6 +106,9 @@
 		22B3A7F01E24BFC70037A919 /* iSocket */ = {
 			isa = PBXGroup;
 			children = (
+				221A295F1E28D14500763973 /* WebSocketManager */,
+				2282E1FF1E28B47D0047E2EC /* CocoaAsyncSocketManager */,
+				225B6D321E28A0B3007054FB /* NativeSocketManager */,
 				22B3A7F41E24BFC70037A919 /* AppDelegate.h */,
 				22B3A7F51E24BFC70037A919 /* AppDelegate.m */,
 				22B3A7F71E24BFC70037A919 /* ViewController.h */,
@@ -107,8 +143,6 @@
 		22B3A8131E24C6300037A919 /* Generate */ = {
 			isa = PBXGroup;
 			children = (
-				22B3A81B1E24CC120037A919 /* Person.pbobjc.h */,
-				22B3A81C1E24CC120037A919 /* Person.pbobjc.m */,
 			);
 			path = Generate;
 			sourceTree = "<group>";
@@ -254,11 +288,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				221A29621E28D15100763973 /* WebSocketManager.m in Sources */,
 				22B3A7F91E24BFC70037A919 /* ViewController.m in Sources */,
 				22B3A7F61E24BFC70037A919 /* AppDelegate.m in Sources */,
 				22B3A81A1E24C6300037A919 /* protobuf.md in Sources */,
-				22B3A81D1E24CC120037A919 /* Person.pbobjc.m in Sources */,
 				22B3A7F31E24BFC70037A919 /* main.m in Sources */,
+				225B6D351E28A0C4007054FB /* NativeSocketManager.m in Sources */,
+				2233E64D1E28B4CF0086056A /* CocoaAsyncSocketManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

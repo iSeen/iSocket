@@ -1,6 +1,6 @@
 # Socket
 
-[概念](#概念)
+[概念](#概念)  
 [即时通讯-IM](#即时通讯-IM)  
 [相关文章](#相关文章)
 
@@ -130,7 +130,8 @@ Socket是在应用层和传输层之间的一个抽象层，它把TCP/IP层复�
 每一个应用或者说服务，都有一个端口。比如DNS的53端口，http的80端口。我们能由DNS请求到查询信息，是因为DNS服务器时时刻刻都在监听53端口，当收到我们的查询请求以后，就能够返回我们想要的IP信息。
 
 Socket是 "打开—(读/写)—关闭" 模式的实现，以使用TCP协议通讯的Socket为例，其交互流程大概如下:
-![201701122540socket jiaohuliucheng.png](http://ohlkc37yo.bkt.clouddn.com/201701122540socket jiaohuliucheng.png)
+
+![](http://ohlkc37yo.bkt.clouddn.com/201701122540socket jiaohuliucheng.png)
 
 	·服务器根据地址类型（ipv4,ipv6）、socket类型、协议创建socket
 	·服务器为socket绑定ip地址和端口号
@@ -236,9 +237,6 @@ ProtocolBuffer 缺点：
 
 
 
-
-
-
 ### 实现方式:  
 
 #### 1.使用第三方IM服务  
@@ -247,17 +245,64 @@ ProtocolBuffer 缺点：
 	缺点: 定制化程度太高, 贵. 若IM非主要功能, 辅助功能, 可考虑.
 
 #### 2.自己实现
+需要考虑:  
+
+	1）传输协议的选择，TCP还是UDP？(技术成熟用UDP+私有协议, 否则用TCP)
+	2）选择使用哪种聊天协议：
+	    基于Scoket原生：代表框架 CocoaAsyncSocket / 自定义封装
+	    基于WebScoket：代表框架 SocketRocket。
+	    基于MQTT：代表框架 MQTTKit。
+	    基于XMPP：代表框架 XMPPFramework。
+	3）我们是自己去基于OS底层Socket进行封装还是在第三方框架的基础上进行封装？
+	4）传输数据的格式，我们是用Json、还是XML、还是谷歌推出的ProtocolBuffer？
+	5）我们还有一些细节问题需要考虑，例如TCP的长连接如何保持，心跳机制，Qos机制，PingPong机制, 断线重连机制等等...当然，除此之外，我们还有一些安全问题需要考虑。
+
+
+#### 心跳
+
+	心跳: 用来检测TCP连接的双方是否可用.  
+	TCP的KeepAlive机制: 只能保证连接的存在，但是并不能保证客户端以及服务端的可用性.
+	
+>比如: 某台服务器因为某些原因导致负载超高，CPU 100%，无法响应任何业务请求，但是使用 TCP 探针则仍旧能够确定连接状态，这就是典型的连接活着但业务提供方已死的状态。
+
+心跳机制作用:  
+    客户端发起心跳Ping（一般都是客户端），假如设置在10秒后如果没有收到回调，那么说明服务器或者客户端某一方出现问题，这时候我们需要主动断开连接。  
+    服务端也是一样，会维护一个socket的心跳间隔，当约定时间内，没有收到客户端发来的心跳，我们会知道该连接已经失效，然后主动断开连接。
+
+真正需要心跳机制的原因: 主要是在于国内运营商NAT超时。国内的运营商一般NAT超时的时间为5分钟，所以通常我们心跳设置的时间间隔为3-5分钟。
+
+#### PingPong机制
+解决: 心跳间隔的3-5分钟如果连接假在线（例如在地铁电梯这种环境下）无法保证消息的即时性的问题;
+
+![](http://ohlkc37yo.bkt.clouddn.com/2017011339341socketpingpangack.jpg)
+
+
+当服务端发出一个Ping，客户端没有在约定的时间内返回响应的ack，则认为客户端已经不在线，这时我们Server端会主动断开Scoket连接，并且改由APNS推送的方式发送消息。
+
+同样的是，当客户端去发送一个消息，因为我们迟迟无法收到服务端的响应ack包，则表明客户端或者服务端已不在线，我们也会显示消息发送失败，并且断开Scoket连接。
+
+还记得我们之前CocoaSyncSockt的例子所讲的获取消息超时就断开吗？其实它就是一个PingPong机制的客户端实现。我们每次可以在发送消息成功后，调用这个超时读取的方法，如果一段时间没收到服务器的响应，那么说明连接不可用，则断开Scoket连接.
+
+#### 重连机制
+理论上，我们自己主动去断开的Scoket连接（例如退出账号，APP退出到后台等等），不需要重连。其他的连接断开，我们都需要进行断线重连。
+一般解决方案是尝试重连几次，如果仍旧无法重连成功，那么不再进行重连。
+
 
 
 
 ## <a id="相关文章"></a>相关文章
-[Socket使用大全](http://blog.csdn.net/ch_soft/article/details/7369705)
+[iOS即时通讯，从入门到“放弃”？](http://www.jianshu.com/p/2dbb360886a8)
 
-[关于iOS socket都在这里了](http://www.cocoachina.com/ios/20160602/16572.html)
-
-[IM 即时通讯技术在多应用场景下的技术实现，以及性能调优（iOS视角）](http://www.jianshu.com/p/8cd908148f9e)  
+[为什么说基于TCP的移动端IM仍然需要心跳保活？](http://www.52im.net/thread-281-1-1.html)
 
 [微信,QQ这类IM app怎么做——谈谈Websocket](http://www.jianshu.com/p/bcefda55bce4)
 
+[移动端IM/推送系统的协议选型：UDP还是TCP？](http://www.52im.net/thread-33-1-1.html)
+
+[IM 即时通讯技术在多应用场景下的技术实现，以及性能调优（iOS视角）](http://www.jianshu.com/p/8cd908148f9e)  
+
 [《基于HTTP2的全新APNs协议》](https://github.com/ChenYilong/iOS9AdaptationTips/blob/master/%E5%9F%BA%E4%BA%8EHTTP2%E7%9A%84%E5%85%A8%E6%96%B0APNs%E5%8D%8F%E8%AE%AE/%E5%9F%BA%E4%BA%8EHTTP2%E7%9A%84%E5%85%A8%E6%96%B0APNs%E5%8D%8F%E8%AE%AE.md)  
 
+[Socket使用大全](http://blog.csdn.net/ch_soft/article/details/7369705)
+
+[关于iOS socket都在这里了](http://www.cocoachina.com/ios/20160602/16572.html)

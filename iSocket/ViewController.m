@@ -7,10 +7,26 @@
 //
 
 #import "ViewController.h"
-#import <ProtocolBuffers/ProtocolBuffers.h>
-#import "Person.pbobjc.h"
+//#import <ProtocolBuffers/ProtocolBuffers.h>
+//#import "Person.pbobjc.h"
+
+#import "NativeSocketManager.h"
+#import "CocoaAsyncSocketManager.h"
+#import "WebSocketManager.h"
 
 @interface ViewController ()
+
+//@property (nonatomic, strong) NativeSocketManager *manager;
+//@property (nonatomic, strong) CocoaAsyncSocketManager *manager;
+@property (nonatomic, strong) WebSocketManager *manager;
+
+@property (weak, nonatomic) IBOutlet UITextField *textField;
+@property (weak, nonatomic) IBOutlet UIButton *sendBtn;
+
+@property (weak, nonatomic) IBOutlet UIButton *connectBtn;
+@property (weak, nonatomic) IBOutlet UIButton *disConnectBtn;
+
+@property (weak, nonatomic) IBOutlet UIButton *sendPingBtn;
 
 @end
 
@@ -18,15 +34,41 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    self.view.backgroundColor = [UIColor whiteColor];
     
-    PBUser *pbUser = [PBUser ]
+    //先运行服务器(项目目录中的node.js) 终端运行 node fileName
+//    _manager = [NativeSocketManager sharedInstance];
+//    _manager = [CocoaAsyncSocketManager sharedInstance];
+    _manager = [WebSocketManager sharedInstance];
+    
+    [_sendBtn addTarget:self action:@selector(sendAction) forControlEvents:UIControlEventTouchUpInside];
+    [_connectBtn addTarget:self action:@selector(connectAction) forControlEvents:UIControlEventTouchUpInside];
+    [_disConnectBtn addTarget:self action:@selector(disConnectAction) forControlEvents:UIControlEventTouchUpInside];
+    
+    [_sendPingBtn addTarget:self action:@selector(pingAction) forControlEvents:UIControlEventTouchUpInside];
 }
 
+- (void)sendAction {
+    if (_textField.text.length == 0) {
+        return;
+    }
+    [_manager sendMessage:_textField.text];
+}
+
+- (void)connectAction {
+    [_manager connect];
+}
+
+- (void)disConnectAction {
+    [_manager disConnect];
+}
+
+- (void)pingAction {
+    [_manager pingPong];
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 
