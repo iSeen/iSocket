@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		221A29621E28D15100763973 /* WebSocketManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 221A29611E28D15100763973 /* WebSocketManager.m */; };
 		2233E64D1E28B4CF0086056A /* CocoaAsyncSocketManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2233E64C1E28B4CF0086056A /* CocoaAsyncSocketManager.m */; };
+		22426DE01E2A16CE00823531 /* Person.pbobjc.m in Sources */ = {isa = PBXBuildFile; fileRef = 22426DDD1E2A16CE00823531 /* Person.pbobjc.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		22426DE21E2A16CE00823531 /* protobuf.md in Sources */ = {isa = PBXBuildFile; fileRef = 22426DDF1E2A16CE00823531 /* protobuf.md */; };
 		225B6D351E28A0C4007054FB /* NativeSocketManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 225B6D341E28A0C4007054FB /* NativeSocketManager.m */; };
 		22B3A7F31E24BFC70037A919 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 22B3A7F21E24BFC70037A919 /* main.m */; };
 		22B3A7F61E24BFC70037A919 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 22B3A7F51E24BFC70037A919 /* AppDelegate.m */; };
@@ -16,17 +18,19 @@
 		22B3A7FC1E24BFC70037A919 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22B3A7FA1E24BFC70037A919 /* Main.storyboard */; };
 		22B3A7FE1E24BFC70037A919 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22B3A7FD1E24BFC70037A919 /* Assets.xcassets */; };
 		22B3A8011E24BFC70037A919 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22B3A7FF1E24BFC70037A919 /* LaunchScreen.storyboard */; };
-		22B3A8191E24C6300037A919 /* person.proto in Resources */ = {isa = PBXBuildFile; fileRef = 22B3A8161E24C6300037A919 /* person.proto */; };
-		22B3A81A1E24C6300037A919 /* protobuf.md in Sources */ = {isa = PBXBuildFile; fileRef = 22B3A8171E24C6300037A919 /* protobuf.md */; };
-		8BF2A593B135024E6F94104D /* libPods-iSocket.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CDDBD8CA3D7402C31AFAE67 /* libPods-iSocket.a */; };
+		22E8D96F1E2A185000ABEEAE /* Person.proto in Resources */ = {isa = PBXBuildFile; fileRef = 22E8D96E1E2A185000ABEEAE /* Person.proto */; };
+		94EE09E58EA9113AC4C1D4F8 /* Pods_iSocket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 794AF635005BE51173F91DD0 /* Pods_iSocket.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1CDDBD8CA3D7402C31AFAE67 /* libPods-iSocket.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iSocket.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		221A29601E28D15100763973 /* WebSocketManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebSocketManager.h; sourceTree = "<group>"; };
 		221A29611E28D15100763973 /* WebSocketManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebSocketManager.m; sourceTree = "<group>"; };
 		2233E64B1E28B4CF0086056A /* CocoaAsyncSocketManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CocoaAsyncSocketManager.h; sourceTree = "<group>"; };
 		2233E64C1E28B4CF0086056A /* CocoaAsyncSocketManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CocoaAsyncSocketManager.m; sourceTree = "<group>"; };
+		22426DD91E2A157B00823531 /* libProtocolBuffers.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libProtocolBuffers.a; path = "../Library/Developer/Xcode/DerivedData/iSocket-eugaihbavuhjmodyjxfjcdwirixl/Build/Products/Debug-iphonesimulator/ProtocolBuffers/libProtocolBuffers.a"; sourceTree = "<group>"; };
+		22426DDC1E2A16CE00823531 /* Person.pbobjc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.pbobjc.h; sourceTree = "<group>"; };
+		22426DDD1E2A16CE00823531 /* Person.pbobjc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.pbobjc.m; sourceTree = "<group>"; };
+		22426DDF1E2A16CE00823531 /* protobuf.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = protobuf.md; sourceTree = "<group>"; };
 		225B6D331E28A0C4007054FB /* NativeSocketManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NativeSocketManager.h; sourceTree = "<group>"; };
 		225B6D341E28A0C4007054FB /* NativeSocketManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NativeSocketManager.m; sourceTree = "<group>"; };
 		22B3A7EE1E24BFC70037A919 /* iSocket.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iSocket.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -39,9 +43,9 @@
 		22B3A7FD1E24BFC70037A919 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		22B3A8001E24BFC70037A919 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		22B3A8021E24BFC70037A919 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		22B3A8161E24C6300037A919 /* person.proto */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = person.proto; sourceTree = "<group>"; };
-		22B3A8171E24C6300037A919 /* protobuf.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = protobuf.md; sourceTree = "<group>"; };
+		22E8D96E1E2A185000ABEEAE /* Person.proto */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Person.proto; sourceTree = "<group>"; };
 		752C482E45FFCF3D9EE53803 /* Pods-iSocket.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iSocket.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iSocket/Pods-iSocket.debug.xcconfig"; sourceTree = "<group>"; };
+		794AF635005BE51173F91DD0 /* Pods_iSocket.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iSocket.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3BF96EB43F6AAB9E51735CE /* Pods-iSocket.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iSocket.release.xcconfig"; path = "Pods/Target Support Files/Pods-iSocket/Pods-iSocket.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -50,7 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8BF2A593B135024E6F94104D /* libPods-iSocket.a in Frameworks */,
+				94EE09E58EA9113AC4C1D4F8 /* Pods_iSocket.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,6 +68,17 @@
 				221A29611E28D15100763973 /* WebSocketManager.m */,
 			);
 			path = WebSocketManager;
+			sourceTree = "<group>";
+		};
+		22426DDB1E2A16CE00823531 /* Protobuf */ = {
+			isa = PBXGroup;
+			children = (
+				22E8D96E1E2A185000ABEEAE /* Person.proto */,
+				22426DDC1E2A16CE00823531 /* Person.pbobjc.h */,
+				22426DDD1E2A16CE00823531 /* Person.pbobjc.m */,
+				22426DDF1E2A16CE00823531 /* protobuf.md */,
+			);
+			path = Protobuf;
 			sourceTree = "<group>";
 		};
 		225B6D321E28A0B3007054FB /* NativeSocketManager */ = {
@@ -87,7 +102,6 @@
 		22B3A7E51E24BFC70037A919 = {
 			isa = PBXGroup;
 			children = (
-				22B3A8121E24C6300037A919 /* Protobuf */,
 				22B3A7F01E24BFC70037A919 /* iSocket */,
 				22B3A7EF1E24BFC70037A919 /* Products */,
 				D9A7EF68F57E902BCC3F1D97 /* Pods */,
@@ -106,6 +120,7 @@
 		22B3A7F01E24BFC70037A919 /* iSocket */ = {
 			isa = PBXGroup;
 			children = (
+				22426DDB1E2A16CE00823531 /* Protobuf */,
 				221A295F1E28D14500763973 /* WebSocketManager */,
 				2282E1FF1E28B47D0047E2EC /* CocoaAsyncSocketManager */,
 				225B6D321E28A0B3007054FB /* NativeSocketManager */,
@@ -130,19 +145,11 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		22B3A8121E24C6300037A919 /* Protobuf */ = {
-			isa = PBXGroup;
-			children = (
-				22B3A8161E24C6300037A919 /* person.proto */,
-				22B3A8171E24C6300037A919 /* protobuf.md */,
-			);
-			path = Protobuf;
-			sourceTree = "<group>";
-		};
 		B85195D1F82599FCABE9D491 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				1CDDBD8CA3D7402C31AFAE67 /* libPods-iSocket.a */,
+				22426DD91E2A157B00823531 /* libProtocolBuffers.a */,
+				794AF635005BE51173F91DD0 /* Pods_iSocket.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -219,7 +226,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				22B3A8011E24BFC70037A919 /* LaunchScreen.storyboard in Resources */,
-				22B3A8191E24C6300037A919 /* person.proto in Resources */,
+				22E8D96F1E2A185000ABEEAE /* Person.proto in Resources */,
 				22B3A7FE1E24BFC70037A919 /* Assets.xcassets in Resources */,
 				22B3A7FC1E24BFC70037A919 /* Main.storyboard in Resources */,
 			);
@@ -280,10 +287,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22426DE01E2A16CE00823531 /* Person.pbobjc.m in Sources */,
 				221A29621E28D15100763973 /* WebSocketManager.m in Sources */,
 				22B3A7F91E24BFC70037A919 /* ViewController.m in Sources */,
+				22426DE21E2A16CE00823531 /* protobuf.md in Sources */,
 				22B3A7F61E24BFC70037A919 /* AppDelegate.m in Sources */,
-				22B3A81A1E24C6300037A919 /* protobuf.md in Sources */,
 				22B3A7F31E24BFC70037A919 /* main.m in Sources */,
 				225B6D351E28A0C4007054FB /* NativeSocketManager.m in Sources */,
 				2233E64D1E28B4CF0086056A /* CocoaAsyncSocketManager.m in Sources */,
@@ -406,6 +414,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = DZNJ4F4E32;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/CocoaAsyncSocket\"",
+					"\"${PODS_ROOT}/Headers/Public/ProtocolBuffers\"",
+					"\"${PODS_ROOT}/Headers/Public/SocketRocket\"",
+				);
 				INFOPLIST_FILE = iSocket/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -420,6 +435,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = DZNJ4F4E32;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/CocoaAsyncSocket\"",
+					"\"${PODS_ROOT}/Headers/Public/ProtocolBuffers\"",
+					"\"${PODS_ROOT}/Headers/Public/SocketRocket\"",
+				);
 				INFOPLIST_FILE = iSocket/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

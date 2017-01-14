@@ -17,11 +17,25 @@ Protocol buffers
 	brew install libtool
 	brew install protobuf
 
-建立.proto, 在同目录下生成.h/.m: 
-`protoc --plugin=/usr/local/bin/protoc-gen-objc 文件名.proto --objc_out="./"`
+项目Podfile加入以下内容, 并`pod install`
+
+	pod 'Protobuf'
+
+编写.proto原型文件  
+.proto目录下执行以下命令, 会在同目录下生成OC文件 .h/.m: 并拖入项目中, 若出现语法之类错误, 可在工程 Target/Build Phases/Compile Sources/ .proto.m 后面加入 `-fno-objc-arc`
+	
+	protoc 文件名.proto --objc_out="./"
+	或者
+	protoc --plugin=/usr/local/bin/protoc-gen-objc 文件名.proto --objc_out="./"
+
+
 
 
 ### 参考文章
+[Google Protocol Buffer 的使用和原理](http://www.ibm.com/developerworks/cn/linux/l-cn-gpb)
+
 [Google Protocol Buffers浅析（一）](http://www.cnblogs.com/royenhome/archive/2010/10/29/1864860.html)
 
 [iOS之ProtocolBuffer搭建和示例demo](http://www.cnblogs.com/tandaxia/p/6181534.html)
+
+[分享iOS使用ProtocolBuffer的方法](http://blog.csdn.net/leihaoyude/article/details/49274601)

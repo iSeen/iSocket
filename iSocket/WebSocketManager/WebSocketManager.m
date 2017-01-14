@@ -7,7 +7,7 @@
 //
 
 #import "WebSocketManager.h"
-#import <SocketRocket.h>
+#import "SocketRocket.h"
 
 #define dispatch_main_async_safe(block)\
     if ([NSThread isMainThread]) {\

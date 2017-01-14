@@ -1,9 +1,13 @@
 
+use_frameworks!
 target 'iSocket' do
 
 pod 'CocoaAsyncSocket' 
 pod 'SocketRocket'
 
-pod 'ProtocolBuffers'
+pod 'Protobuf'
+
+#pod 'ProtocolBuffers'
+#pod 'ProtocolBuffers-Swift'
 
 end

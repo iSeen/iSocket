@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-//#import "Person.pbobjc.h"
+#import "Person.pbobjc.h"
 
 #import "NativeSocketManager.h"
 #import "CocoaAsyncSocketManager.h"
@@ -41,6 +41,10 @@
 }
 
 - (void)testProtobuf {
+    
+    Person *person = [Person new];
+    
+    
     
 }
 
