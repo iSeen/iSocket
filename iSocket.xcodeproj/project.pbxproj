@@ -133,18 +133,10 @@
 		22B3A8121E24C6300037A919 /* Protobuf */ = {
 			isa = PBXGroup;
 			children = (
-				22B3A8131E24C6300037A919 /* Generate */,
 				22B3A8161E24C6300037A919 /* person.proto */,
 				22B3A8171E24C6300037A919 /* protobuf.md */,
 			);
 			path = Protobuf;
-			sourceTree = "<group>";
-		};
-		22B3A8131E24C6300037A919 /* Generate */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Generate;
 			sourceTree = "<group>";
 		};
 		B85195D1F82599FCABE9D491 /* Frameworks */ = {
