@@ -35,16 +35,25 @@
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
     
-    [self testProtobuf];
+    [self testProtobuf]; //测试Protobuf数据
     
-//    [self loadSocket]; //运行Socket项目
+    [self loadSocket]; //运行Socket项目
 }
 
 - (void)testProtobuf {
     
     Person *person = [Person new];
+    person.name = @"zhangning";
+    person.age = 29;
+    NSData *data = [person data];
     
+    NSString *path = @"/Users/zhang/Desktop/test.data";
+    [data writeToFile:path atomically:YES];
     
+    NSData *pathData = [NSData dataWithContentsOfFile:path];
+    Person *pathPerson = [Person parseFromData:pathData error:nil];
+    
+    NSLog(@"--- %@  --  %zd", pathPerson.name, pathPerson.age);
     
 }
 
